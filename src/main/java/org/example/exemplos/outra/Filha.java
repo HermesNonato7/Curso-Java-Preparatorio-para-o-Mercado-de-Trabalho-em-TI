@@ -24,8 +24,8 @@ public class Filha extends Mae {
     //Exemplo de polimorfismo (onde sobrescrevo o método da classe mãe)
     public String imprimeNomeDaClasse() {
         System.out.println("Filha");
-        this.imprimeHora();//a palavra this reforÃ§a que serÃ¡ utilizado o método do objeto atual.
-        return super.imprimeNomeDaClasse();//a palavra super é utilizada para executar o método da classe mãee.
+        this.imprimeHora();//a palavra this reforça que será utilizado o método do objeto atual.
+        return super.imprimeNomeDaClasse();//a palavra super é utilizada para executar o método da classe mãe.
     }
 
     public void imprimeHora() {
