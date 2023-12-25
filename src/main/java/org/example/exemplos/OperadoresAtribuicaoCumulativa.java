@@ -2,7 +2,7 @@ package org.example.exemplos;
 
 public class OperadoresAtribuicaoCumulativa {
 
-    public static void main (String [] args) {
+    public static void main(String[] args) {
         int a;//declarando uma variável
         int b = 100;//declarando uma variável e atribuindo um valor
 
