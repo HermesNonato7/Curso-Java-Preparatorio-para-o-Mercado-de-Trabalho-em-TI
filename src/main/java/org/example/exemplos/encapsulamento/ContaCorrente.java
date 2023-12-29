@@ -10,6 +10,7 @@ public class ContaCorrente {
     }
 
     public ContaCorrente(double valor) {
+
         this.saldo = valor;
     }
 
@@ -23,6 +24,7 @@ public class ContaCorrente {
         this.saldo();
     }
 
+    // Sobrecarga, pode ser utilizado em métodos e construtores
     public void depositar(double valor, String tipoMoeda) {
         this.saldo = saldo + valor;
         this.saldo();
