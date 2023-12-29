@@ -12,7 +12,7 @@ public class Filha extends Mae {
         System.out.println(filha.atributoPublic);
         //System.out.println(filha.atributoPrivate);//Erro porque é private
         System.out.println(filha.atributoProtected);
-        //System.out.println(filha.atributoComModificadorPadrao);//Erro porque está em outro pacote
+        //System.out.println(filha.atributoComModificadorPadrao);// Erro porque está em outro pacote
         System.out.println(filha.imprimeNomeDaClasse());
         //this.imprimeHora();//não é permitido utilizar this em metodo static
         filha.imprimeHora();//somente dessa forma consigo executar o método pq. estou num método static
