@@ -11,7 +11,7 @@ public class MinhaClasse {
     }
 
     //Construtor com parâmetros
-    public MinhaClasse (String nome, Date dataCadastro) {
+    public MinhaClasse(String nome, Date dataCadastro) {
         this.nome = nome;
         this.dataCadastro = dataCadastro;
     }
