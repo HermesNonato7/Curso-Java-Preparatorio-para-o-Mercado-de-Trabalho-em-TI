@@ -29,6 +29,7 @@ public class Filha extends Mae {
     }
 
     public void imprimeHora() {
+
         System.out.println(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
     }
 }

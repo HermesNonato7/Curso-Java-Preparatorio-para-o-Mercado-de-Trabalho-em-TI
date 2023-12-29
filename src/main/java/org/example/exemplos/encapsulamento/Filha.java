@@ -10,7 +10,7 @@ public class Filha extends Mae {
         System.out.println(atributoStatic);
         System.out.println(filha.atributoStatic);
         System.out.println(filha.atributoPublic);
-        //System.out.println(filha.atributoPrivate);//Esse método não é visível na classe Mae
+//        System.out.println(filha.atributoPrivate);//Esse método não é visível na classe Mae
         System.out.println(filha.atributoProtected);
         System.out.println(filha.atributoComModificadorPadrao);
         System.out.println(filha.imprimeNomeDaClasse());

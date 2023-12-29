@@ -21,8 +21,9 @@ public class CondicionaisCase {
                 break;
         }
     */
+        //</editor-fold>
 
-        int menu = 1;
+        int menu = 3;
 
         switch (menu) {
             case 1:
@@ -30,7 +31,7 @@ public class CondicionaisCase {
                 break;
             case 2:
                 System.out.println("Selecionou o item 2");
-                //break;
+                break;
             case 3:
                 System.out.println("Selecionou o item 3");
                 break;
