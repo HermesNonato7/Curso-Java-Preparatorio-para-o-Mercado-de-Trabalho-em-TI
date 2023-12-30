@@ -1,9 +1,12 @@
 package org.example.exercicios;
 
+import org.example.exemplos.Tipo;
+
 public class ContaCorrente extends Conta {
     public ContaCorrente(String identificadorConta) {
         super.identificadorConta = identificadorConta;
-        super.tipo = "Conta corrente";
+        super.tipo = Tipo.CONTA_CORRENTE;
+//        super.tipo = "Conta corrente";
     }
 
     public void imprimirSaldo() {

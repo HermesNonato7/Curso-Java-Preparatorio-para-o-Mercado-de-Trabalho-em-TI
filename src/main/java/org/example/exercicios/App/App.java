@@ -1,5 +1,6 @@
 package org.example.exercicios.App;
 
+import org.example.exemplos.TipoValor;
 import org.example.exercicios.Conta;
 import org.example.exercicios.ContaCorrente;
 import org.example.exercicios.ContaPoupanca;
@@ -9,8 +10,6 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-
-//        Descrição do exercício mo final desta página
         ContaCorrente contaCorrente = new ContaCorrente("123456-0");
         contaCorrente.depositar(100.00);
         contaCorrente.sacar(70.00);
@@ -39,7 +38,7 @@ public class App {
             conta.imprimirSaldo();
         }
 
-        System.out.println("----------uso do instanceof----------");
+        System.out.println("----------uso do instanceof para identificar o tipo do objeto----------");
         System.out.println();
 
         List<Conta> contas = new ArrayList<>();
@@ -47,15 +46,31 @@ public class App {
         contas.add(contaCorrente2);
         contas.add(contaPoupanca);
         contas.add(contaPoupanca2);
+
         for (Conta conta : contas) {
             if (conta instanceof ContaCorrente) {
-                ((ContaCorrente) conta).imprimirSaldo(); // Depois do casting, posso utilizar os métodos da conta específica
+                ((ContaCorrente) conta).imprimirSaldo();
             }
             if (conta instanceof ContaPoupanca) {
                 ((ContaPoupanca) conta).imprimirSaldo();
             }
         }
+
+        App app = new App();
+        app.meuMetodoComEnum(TipoValor.CONTA_CORRENTE);
+        //app.meuMetodoComEnum(1);
+        app.meuMetodoSemEnum(8);//Enum garante maior seguranÃ§a quanto ao valor que estÃ¡ sendo inserido como parÃ¢metro.
+
     }
+
+    private void meuMetodoSemEnum(Integer tipoValor) {
+        System.out.println(tipoValor);
+    }
+
+    private void meuMetodoComEnum(TipoValor tipoValor) {
+        System.out.println("O tipo selecionado foi " + tipoValor + " que vale " + tipoValor.getValor());
+    }
+}
 
     /*
     1 - Na package de ecercícios a classe Conta
@@ -113,5 +128,3 @@ public class App {
 - Crie uma estrutura de repetição que imprima o saldo de cada uma das contas que estão nas listas.
 
      */
-}
-

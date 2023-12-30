@@ -1,9 +1,12 @@
 package org.example.exercicios;
 
-public class    ContaPoupanca extends Conta {
+import org.example.exemplos.Tipo;
+
+public class ContaPoupanca extends Conta {
     public ContaPoupanca(String identificadorConta) {
         super.identificadorConta = identificadorConta;
-        super.tipo = "Conta poupança";
+        super.tipo = Tipo.CONTA_POUPANCA;
+//        super.tipo = "Conta poupança";
     }
 
     public double rendimentos() {
