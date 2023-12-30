@@ -1,5 +1,6 @@
 package org.example.exercicios.App;
 
+import org.example.exercicios.Conta;
 import org.example.exercicios.ContaCorrente;
 import org.example.exercicios.ContaPoupanca;
 
@@ -36,6 +37,23 @@ public class App {
 
         for (ContaPoupanca conta : contaspoupanca) {
             conta.imprimirSaldo();
+        }
+
+        System.out.println("----------uso do instanceof----------");
+        System.out.println();
+
+        List<Conta> contas = new ArrayList<>();
+        contas.add(contaCorrente);
+        contas.add(contaCorrente2);
+        contas.add(contaPoupanca);
+        contas.add(contaPoupanca2);
+        for (Conta conta : contas) {
+            if (conta instanceof ContaCorrente) {
+                ((ContaCorrente) conta).imprimirSaldo(); // Depois do casting, posso utilizar os métodos da conta específica
+            }
+            if (conta instanceof ContaPoupanca) {
+                ((ContaPoupanca) conta).imprimirSaldo();
+            }
         }
     }
 
