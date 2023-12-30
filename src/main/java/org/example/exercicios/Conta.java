@@ -2,7 +2,7 @@ package org.example.exercicios;
 
 import org.example.exemplos.Tipo;
 
-public class Conta {
+public abstract class Conta {
 
     protected String identificadorConta;//sendo protected as classes filhas também poderão acessar esse atributo.
     protected double saldo;
