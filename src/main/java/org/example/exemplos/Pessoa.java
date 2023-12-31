@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
 
-// Precisa implementar a interface "comparble'
+// Precisa implementar a interface "comparable'
 public class Pessoa implements Comparable<Pessoa> {
     private String cpf;
     private String nome;
