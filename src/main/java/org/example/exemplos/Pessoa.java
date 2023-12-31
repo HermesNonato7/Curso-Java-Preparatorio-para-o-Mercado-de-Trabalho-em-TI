@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
 
+// Precisa implementar a interface "comparble'
 public class Pessoa implements Comparable<Pessoa> {
     private String cpf;
     private String nome;
@@ -45,7 +46,7 @@ public class Pessoa implements Comparable<Pessoa> {
     }
 
     public static void umMetodo(List<Pessoa> t, Predicate<Pessoa> predicate) {
-        for(Pessoa p : t) {
+        for (Pessoa p : t) {
             if (predicate.test(p)) {
                 System.out.println("Faz algo com a pessoa: " + p.getNome());
             }
@@ -61,8 +62,8 @@ public class Pessoa implements Comparable<Pessoa> {
     }
 
     /*
-       Na comparaÃ§Ã£o retorna um valor negativo, zero ou um valor positivo se o valor comparado
-       vir antes, for igual ou vir depois do outro valor, seja ele numÃ©rico ou alfabÃ©tico.
+       Na comparação retorna um valor negativo, zero ou um valor positivo se o valor comparado
+       vir antes, for igual ou vir depois do outro valor    , seja ele numérico ou alfabético.
     */
     @Override
     public int compareTo(Pessoa outraPessoa) {

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class OrdenarLista {
     public static void main(String[] args) {
-        List<String> list  = new ArrayList<>();
+        List<String> list = new ArrayList<>();
         list.add("D");
         list.add("H");
         list.add("G");
@@ -30,7 +30,7 @@ public class OrdenarLista {
 
         System.out.println("---------");
 
-        List<Integer> listInteger  = new ArrayList<>();
+        List<Integer> listInteger = new ArrayList<>();
         listInteger.add(4);
         listInteger.add(0);
         listInteger.add(3);
@@ -58,7 +58,8 @@ public class OrdenarLista {
         Pessoa pessoa4 = new Pessoa("Marcos", 7);
         Pessoa pessoa5 = new Pessoa("Gustavo", 18);
 
-        List<Pessoa> listPessoa  = new ArrayList<>();
+//        Utiliza-se o compareTo para fazer o sort e revrse funcionar com objetos
+        List<Pessoa> listPessoa = new ArrayList<>();
         listPessoa.add(pessoa1);
         listPessoa.add(pessoa2);
         listPessoa.add(pessoa3);
