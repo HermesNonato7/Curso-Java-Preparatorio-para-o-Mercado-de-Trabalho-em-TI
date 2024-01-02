@@ -1,6 +1,7 @@
 package org.example.exemplos;
 
 /*
+    Exceprion Personalizada Part2:
     Criar uma exception personalizada é útil para evitar confusão sobre o que são exceções da linguagem Java
     ou de alguma outra biblioteca de terceiros com as exceções do seu sistema.
  */

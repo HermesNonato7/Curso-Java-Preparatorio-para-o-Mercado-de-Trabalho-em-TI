@@ -72,7 +72,7 @@ public class Excecoes {
         System.out.println("A rotina foi continada até o fim!");
     }
 
-    public static void metodoQueLancaUmaException(ContaCorrente contaCorrente) throws Exception { // posso colocar , e acrescentando mais tipos de exception
+    public static void metodoQueLancaUmaException(ContaCorrente contaCorrente) throws Exception { // posso colocar , e acrescentando mais tipos de exception separadas por virgula
         contaCorrente.imprimirSaldo();
     }
 
