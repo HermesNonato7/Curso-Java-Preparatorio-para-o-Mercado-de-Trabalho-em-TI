@@ -41,7 +41,7 @@ public class Pessoa implements Comparable<Pessoa> {
         return pessoa.getIdade() < 30;
     }
 
-    public boolean pessoaMenor30NaoEstatico() {
+    public boolean pessoaMenor30NaoEstatico() { // Aqui não precisa de parâmetro porque o this referenca a prórpia classe
         return this.getIdade() < 30;
     }
 
