@@ -32,6 +32,6 @@ public class InterfaceFuncionalPredicate {
         //Method reference (referência para método)
         pessoas.removeIf(Pessoa::pessoaMenor30Estatico); // Método dentro da classe estática 'Pessoa'
         pessoas.removeIf(Pessoa::pessoaMenor30NaoEstatico);
-        pessoas.forEach(System.out::println); // Forma mais resumida
+        pessoas.forEach(System.out::println); // Forma  resumida
     }
 }
